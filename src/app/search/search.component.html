@@ -3,3 +3,17 @@
   Use Material Spotify app to browse new releases and find your favorite songs.
   All you get is this text and a mostly barebone HTML document.
 </p>
+<nav class="grey darken-3">
+  <div class="nav-wrapper">
+    <form>
+      <div class="input-field">
+        <input id="search" type="search" required placeholder="Search Artists..."
+               [(ngModel)]="searchStr"
+               name="searchStr"
+               (keyup)="searchMusic()">
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <i (click)="clearStr()" class="material-icons">close</i>
+      </div>
+    </form>
+  </div>
+</nav>

@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
+  searchStr: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  searchMusic() {
+    console.log(this.searchStr);
+  }
+
+  clearStr(): void {
+    this.searchStr = '';
   }
 
 }
